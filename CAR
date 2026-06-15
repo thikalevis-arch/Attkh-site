@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoLux Rentals & Sales</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+</head>
+
+<body>
+
+<nav class="container-fluid">
+  <ul>
+    <li><strong>AutoLux Rentals</strong></li>
+  </ul>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#rentals">Rentals</a></li>
+    <li><a href="#contact" role="button">Get Started</a></li>
+  </ul>
+</nav>
+
+<main class="container">
+  <div class="grid">
+    <section>
+      <hgroup>
+        <h2>Premium Car Rentals & Sales</h2>
+        <h3>Drive luxury, comfort, and performance—on your terms</h3>
+      </hgroup>
+
+      <p>
+        Discover a seamless way to rent or buy high-end vehicles. Whether you need a short-term rental for a trip or
+        you're looking to purchase your dream car, we provide a curated selection of top-tier automobiles.
+      </p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="Luxury car" />
+        <figcaption><a href="https://unsplash.com" target="_blank">Luxury vehicle collection</a></figcaption>
+      </figure>
+
+      <h3 id="rentals">Car Rental Services</h3>
+      <p>
+        Choose from economy, SUV, and luxury categories. Flexible daily, weekly, and monthly plans designed to fit your needs.
+        All vehicles are fully insured and maintained to the highest standards.
+      </p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1200&q=80" alt="Car showroom" />
+        <figcaption><a href="https://unsplash.com" target="_blank">Explore our showroom</a></figcaption>
+      </figure>
+
+      <h3>Car Sales</h3>
+      <p>
+        Looking to own? Browse our selection of certified pre-owned and brand-new vehicles. We offer transparent pricing,
+        financing options, and full inspection reports.
+      </p>
+
+      <figure>
+        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80" alt="Car keys" />
+        <figcaption><a href="https://unsplash.com" target="_blank">Easy ownership experience</a></figcaption>
+      </figure>
+
+      <h3>Why Choose AutoLux?</h3>
+      <p>
+        We combine convenience, trust, and premium quality. Our customer-first approach ensures a smooth experience
+        from browsing to booking or buying.
+      </p>
+
+    </section>
+  </div>
+</main>
+
+<section aria-label="Subscribe example">
+  <div class="container">
+    <article>
+      <hgroup>
+        <h2>Stay Updated</h2>
+        <h3>Get the latest deals and arrivals</h3>
+      </hgroup>
+
+      <form class="grid">
+        <input type="text" id="firstname" name="firstname" placeholder="First name" aria-label="First name" required />
+        <input type="email" id="email" name="email" placeholder="Email address" aria-label="Email address" required />
+        <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+      </form>
+    </article>
+  </div>
+</section>
+
+<footer class="container">
+  <small>
+    <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
+  </small>
+</footer>
+
+</body>
+</html>
