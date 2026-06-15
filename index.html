@@ -2,261 +2,96 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ATTKH Car Services</title>
-
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
-
-    body {
-      background: #f5f7fb;
-      color: #222;
-    }
-
-    /* NAVBAR */
-    header {
-      background: #0f172a;
-      padding: 15px 30px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .logo {
-      color: white;
-      font-size: 20px;
-      font-weight: bold;
-    }
-
-    .menu a {
-      color: white;
-      margin-left: 20px;
-      text-decoration: none;
-      transition: 0.3s;
-    }
-
-    .menu a:hover {
-      color: #38bdf8;
-    }
-
-    /* HERO */
-    .hero {
-      background: url("https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1400&q=80");
-      height: 70vh;
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 45px;
-      background: rgba(0,0,0,0.5);
-      padding: 15px 25px;
-      border-radius: 10px;
-    }
-
-    /* SECTION TITLE */
-    .section-title {
-      text-align: center;
-      margin: 50px 0 20px;
-      font-size: 28px;
-    }
-
-    /* CAR GRID */
-    .cars {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-      padding: 0 40px;
-    }
-
-    .car-card {
-      background: white;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-      transition: 0.3s;
-    }
-
-    .car-card:hover {
-      transform: translateY(-5px);
-    }
-
-    .car-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-
-    .car-info {
-      padding: 15px;
-    }
-
-    .car-info h3 {
-      margin-bottom: 8px;
-    }
-
-    .price {
-      color: #16a34a;
-      font-weight: bold;
-      margin-bottom: 8px;
-    }
-
-    .btn {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 12px;
-      background: #0f172a;
-      color: white;
-      border-radius: 6px;
-      text-decoration: none;
-      font-size: 14px;
-    }
-
-    .btn:hover {
-      background: #38bdf8;
-    }
-
-    /* ABOUT */
-    .about, .contact {
-      padding: 60px 40px;
-      text-align: center;
-    }
-
-    .about p {
-      max-width: 700px;
-      margin: auto;
-      line-height: 1.6;
-    }
-
-    /* CONTACT */
-    .contact-box {
-      margin-top: 20px;
-      font-size: 16px;
-    }
-
-    footer {
-      background: #0f172a;
-      color: white;
-      text-align: center;
-      padding: 15px;
-      margin-top: 40px;
-    }
-
-    /* MOBILE */
-    @media(max-width: 600px) {
-      .hero h1 {
-        font-size: 28px;
-      }
-
-      .menu a {
-        margin-left: 10px;
-        font-size: 14px;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AutoLux Rentals & Sales</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
-  <header>
-    <div class="nav">
-      <div class="logo">ATTKH Cars</div>
-      <div class="menu">
-        <a href="#about">About</a>
-        <a href="#cars">Cars</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </div>
-  </header>
+<nav class="container-fluid">
+  <ul>
+    <li><strong>AutoLux Rentals</strong></li>
+  </ul>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#rentals">Rentals</a></li>
+    <li><a href="#contact" role="button">Get Started</a></li>
+  </ul>
+</nav>
 
-  <!-- HERO -->
-  <section class="hero">
-    <h1>Buy & Rent Quality Cars in Cambodia</h1>
-  </section>
+<main class="container">
+  <div class="grid">
+    <section>
+      <hgroup>
+        <h2>Premium Car Rentals & Sales</h2>
+        <h3>Drive luxury, comfort, and performance—on your terms</h3>
+      </hgroup>
 
-  <!-- ABOUT -->
-  <section id="about" class="about">
-    <h2 class="section-title">About Us</h2>
-    <p>
-      We provide reliable car rental and car selling services.
-      Our mission is to give customers affordable, clean, and well-maintained vehicles
-      for daily use, travel, or ownership.
-    </p>
-  </section>
+      <p>
+        Discover a seamless way to rent or buy high-end vehicles. Whether you need a short-term rental for a trip or
+        you're looking to purchase your dream car, we provide a curated selection of top-tier automobiles.
+      </p>
 
-  <!-- CARS -->
-  <section id="cars">
-    <h2 class="section-title">Our Cars</h2>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1200&q=80" alt="Luxury car" />
+        <figcaption><a href="https://unsplash.com" target="_blank">Luxury vehicle collection</a></figcaption>
+      </figure>
 
-    <div class="cars">
+      <h3 id="rentals">Car Rental Services</h3>
+      <p>
+        Choose from economy, SUV, and luxury categories. Flexible daily, weekly, and monthly plans designed to fit your needs.
+        All vehicles are fully insured and maintained to the highest standards.
+      </p>
 
-      <!-- CAR 1 -->
-      <div class="car-card">
-        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=800&q=80">
-        <div class="car-info">
-          <h3>Toyota Camry 2019</h3>
-          <div class="price">$45 / day or $18,000</div>
-          <p>Automatic | Petrol | 5 Seats</p>
-          <a class="btn" href="#">Book Now</a>
-        </div>
-      </div>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1486262715619-67b85e0b08d3?auto=format&fit=crop&w=1200&q=80" alt="Car showroom" />
+        <figcaption><a href="https://unsplash.com" target="_blank">Explore our showroom</a></figcaption>
+      </figure>
 
-      <!-- CAR 2 -->
-      <div class="car-card">
-        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800&q=80">
-        <div class="car-info">
-          <h3>Honda CR-V 2020</h3>
-          <div class="price">$55 / day or $22,000</div>
-          <p>Automatic | SUV | 5 Seats</p>
-          <a class="btn" href="#">Book Now</a>
-        </div>
-      </div>
+      <h3>Car Sales</h3>
+      <p>
+        Looking to own? Browse our selection of certified pre-owned and brand-new vehicles. We offer transparent pricing,
+        financing options, and full inspection reports.
+      </p>
 
-      <!-- CAR 3 -->
-      <div class="car-card">
-        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800&q=80">
-        <div class="car-info">
-          <h3>BMW 320i 2018</h3>
-          <div class="price">$70 / day or $28,000</div>
-          <p>Luxury | Automatic | 5 Seats</p>
-          <a class="btn" href="#">Book Now</a>
-        </div>
-      </div>
+      <figure>
+        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=80" alt="Car keys" />
+        <figcaption><a href="https://unsplash.com" target="_blank">Easy ownership experience</a></figcaption>
+      </figure>
 
-    </div>
-  </section>
+      <h3>Why Choose AutoLux?</h3>
+      <p>
+        We combine convenience, trust, and premium quality. Our customer-first approach ensures a smooth experience
+        from browsing to booking or buying.
+      </p>
 
-  <!-- CONTACT -->
-  <section id="contact" class="contact">
-    <h2 class="section-title">Contact Us</h2>
+    </section>
+  </div>
+</main>
 
-    <div class="contact-box">
-      📞 Phone: +855 123 456 789 <br/>
-      💬 Telegram / WhatsApp: @ATTKHcars <br/>
-      📍 Location: Phnom Penh, Cambodia
-    </div>
-  </section>
+<section aria-label="Subscribe example">
+  <div class="container">
+    <article>
+      <hgroup>
+        <h2>Stay Updated</h2>
+        <h3>Get the latest deals and arrivals</h3>
+      </hgroup>
 
-  <footer>
-    © 2026 ATTKH Cars. All rights reserved.
-  </footer>
+      <form class="grid">
+        <input type="text" id="firstname" name="firstname" placeholder="First name" aria-label="First name" required />
+        <input type="email" id="email" name="email" placeholder="Email address" aria-label="Email address" required />
+        <button type="submit" onclick="event.preventDefault()">Subscribe</button>
+      </form>
+    </article>
+  </div>
+</section>
+
+<footer class="container">
+  <small>
+    <a href="#">Privacy Policy</a> • <a href="#">Terms of Service</a>
+  </small>
+</footer>
 
 </body>
 </html>
