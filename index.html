@@ -2,157 +2,64 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="ATTKH Car Services - Your premier destination for quality vehicles. Browse our selection of sedans, SUVs, sports cars, and electric vehicles.">
-    <meta name="keywords" content="car services, vehicles, automobiles, sedan, SUV, sports car, electric car">
-    <meta name="author" content="ATTKH Car Services">
-    
-    <!-- Open Graph Meta Tags for Social Sharing -->
-    <meta property="og:title" content="ATTKH - Car Services">
-    <meta property="og:description" content="Your premier destination for quality vehicles">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://attkh-site.example.com">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1552820728-8ac41f1ce891?w=1200&h=630&fit=crop">
-    
-    <title>ATTKH - Car Services | Premium Vehicles</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>ATTKH Car Website Mockup</title>
+
+    <!-- PicoCSS (required) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
 </head>
+
 <body>
-    <header role="banner">
-        <div class="header-content">
-            <h1>🚗 ATTKH Car Services</h1>
-            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" id="menuToggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav aria-label="Main navigation">
-                <ul class="nav-list">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#catalog">Catalog</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <h2>Welcome to ATTKH</h2>
-                <p>Your premier destination for quality vehicles</p>
-                <a href="#catalog" class="cta-button">Browse Our Catalog</a>
-            </div>
+<!-- Navigation (required structure) -->
+<nav class="container-fluid">
+    <ul>
+        <li><strong>ATTKH Preview</strong></li>
+    </ul>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Preview</a></li>
+        <li><a href="#" role="button">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Main content (required structure) -->
+<main class="container">
+    <div class="grid">
+        <section>
+
+            <hgroup>
+                <h2>Car Website Design Mockup</h2>
+                <h3>Modern automotive marketplace UI</h3>
+            </hgroup>
+
+            <p>This is your generated homepage concept turned into a simple HTML preview.</p>
+
+            <figure>
+                <img src="https://sdmntprnznorth.oaiusercontent.com/files/00000000-31b4-720b-a252-4851609d779d/raw?se=2026-06-15T14:48:10Z&sp=r&sv=2026-02-06&sr=b&scid=833eea05-2773-4e42-89e7-37d1c0269baf&skoid=f5e14fda-2af7-44a3-9d18-d372ffcad871&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2026-06-15T01:52:29Z&ske=2026-06-17T01:52:29Z&sks=b&skv=2026-02-06&sig=q/50a2pqHYBaeKb4R7%2BcWVmrAiu%2B8V4MuhScVotxqAk%3D" alt="Car website mockup" />
+                <figcaption><a href="#">Generated UI Preview</a></figcaption>
+            </figure>
+
+            <h3>What this shows</h3>
+            <p>A modern car marketplace layout with hero section, filters, and vehicle catalog cards designed for a premium automotive experience.</p>
+
+            <h3>Next step</h3>
+            <p>You can now turn this into a real website by rebuilding your HTML/CSS around this layout style.</p>
+
         </section>
-
-        <!-- Filter Section -->
-        <section class="filters-section">
-            <div class="filters-container">
-                <h2>Find Your Perfect Car</h2>
-                <div class="filter-controls">
-                    <div class="filter-group">
-                        <label for="priceFilter">Max Price:</label>
-                        <input type="range" id="priceFilter" min="10000" max="60000" step="1000" value="60000" aria-label="Filter by maximum price">
-                        <span id="priceDisplay">$60,000</span>
-                    </div>
-                    <div class="filter-group">
-                        <label for="yearFilter">Year:</label>
-                        <select id="yearFilter" aria-label="Filter by year">
-                            <option value="">All Years</option>
-                            <option value="2024">2024</option>
-                            <option value="2023">2023</option>
-                        </select>
-                    </div>
-                    <button id="resetFilters" class="reset-btn">Reset Filters</button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Car Catalog Section -->
-        <section class="catalog" id="catalog">
-            <h2>Our Car Catalog</h2>
-            <div class="car-grid" id="carGrid" role="region" aria-label="Car catalog grid">
-                <!-- Cars will be dynamically inserted here -->
-            </div>
-            <div id="noResults" class="no-results" style="display: none;">
-                <p>No cars found matching your filters. Please adjust your search.</p>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section class="contact-section" id="contact">
-            <h2>Get In Touch</h2>
-            <div class="contact-container">
-                <form class="contact-form" id="contactForm" aria-label="Contact form">
-                    <div class="form-group">
-                        <label for="name">Name *</label>
-                        <input type="text" id="name" name="name" required aria-required="true">
-                    </div>
-                    <div class="form-group">
-                        <label for="email">Email *</label>
-                        <input type="email" id="email" name="email" required aria-required="true">
-                    </div>
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="tel" id="phone" name="phone" aria-label="Phone number">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Message *</label>
-                        <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <p><strong>Email:</strong> <a href="mailto:thikalevis@gmail.com">thikalevis@gmail.com</a></p>
-                    <p><strong>Phone:</strong> <a href="tel:016909090">016 909090</a>, <a href="tel:012404040">012 404040</a></p>
-                    <p><strong>Hours:</strong> Monday - Saturday, 9 AM - 6 PM</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer role="contentinfo">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>About</h3>
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#mission">Our Mission</a></li>
-                    <li><a href="#team">Our Team</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#privacy">Privacy Policy</a></li>
-                    <li><a href="#terms">Terms of Service</a></li>
-                    <li><a href="#faq">FAQ</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <ul>
-                    <li><a href="#facebook" aria-label="Follow on Facebook">Facebook</a></li>
-                    <li><a href="#twitter" aria-label="Follow on Twitter">Twitter</a></li>
-                    <li><a href="#instagram" aria-label="Follow on Instagram">Instagram</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 ATTKH Car Services. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <!-- Modal for car details -->
-    <div id="carModal" class="modal" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
-        <div class="modal-content">
-            <button class="modal-close" aria-label="Close modal">&times;</button>
-            <div id="modalBody"></div>
-        </div>
     </div>
+</main>
 
-    <script src="script.js"></script>
-</body>
-</html>
+<!-- Subscribe section (required structure) -->
+<section aria-label="Subscribe example">
+    <div class="container">
+        <article>
+            <hgroup>
+                <h2>Stay Updated</h2>
+                <h3>Get new car listings and updates</h3>
+            </hgroup>
+
+            <form class="grid">
+                <input type="text" id="firstname" name="firstname" placeholder="Name" aria-label="Name" required />
+                <input type="email" id="
